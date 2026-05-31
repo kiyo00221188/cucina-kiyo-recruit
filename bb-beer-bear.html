@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BEER BEAR｜キッチンスタッフ募集（おもろまち）</title>
+<meta name="description" content="元イタリア料理人がつくる炭火料理とクラフトビール8タップ。おもろまちのビアレストランBEER BEARでキッチンスタッフ募集。未経験OK・時給1,250円〜・深夜1,562円〜。">
+<style>
+  :root{
+    --bg:#181210; --bg2:#221a15; --card:#2a201a; --line:#3a2c22;
+    --gold:#e8a23d; --amber:#f0b860; --ember:#d2492a;
+    --cream:#f6efe4; --muted:#c2b3a2;
+    --maxw:760px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",system-ui,sans-serif;
+    background:var(--bg); color:var(--cream); line-height:1.8;
+    -webkit-font-smoothing:antialiased; padding-bottom:84px;
+  }
+  a{color:inherit}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 20px}
+  .section{padding:54px 0}
+  .eyebrow{color:var(--gold); font-weight:700; letter-spacing:.14em; font-size:.78rem; text-align:center; margin-bottom:14px}
+  h2.title{font-size:1.55rem; text-align:center; line-height:1.5; margin-bottom:30px; font-weight:800}
+  h2.title small{display:block; font-size:.82rem; color:var(--muted); font-weight:500; margin-top:8px; letter-spacing:.04em}
+
+  /* HERO */
+  .hero{
+    position:relative; text-align:center; padding:72px 20px 64px;
+    background:
+      radial-gradient(120% 80% at 50% -10%, rgba(232,162,61,.22), transparent 60%),
+      linear-gradient(180deg, #20160f 0%, var(--bg) 100%);
+    border-bottom:1px solid var(--line);
+  }
+  .hero .bear{font-size:2.6rem; display:block; margin-bottom:10px}
+  .hero .brand{letter-spacing:.34em; font-weight:800; color:var(--amber); font-size:.92rem; margin-bottom:22px}
+  .hero h1{
+    font-size:2.05rem; line-height:1.42; font-weight:800; margin:0 auto 18px; max-width:18em;
+    text-shadow:0 2px 18px rgba(0,0,0,.4);
+  }
+  .hero h1 em{color:var(--amber); font-style:normal}
+  .hero .lead{color:var(--muted); font-size:1rem; max-width:24em; margin:0 auto 26px}
+  .hero .pills{display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin-bottom:30px}
+  .pill{background:rgba(255,255,255,.06); border:1px solid var(--line); color:var(--cream);
+    padding:6px 13px; border-radius:999px; font-size:.8rem; font-weight:600}
+  .pill.hot{background:rgba(210,73,42,.18); border-color:rgba(210,73,42,.5); color:#ffb59c}
+
+  .btn{
+    display:inline-block; background:linear-gradient(180deg,var(--amber),var(--gold));
+    color:#241606; font-weight:800; text-decoration:none; padding:15px 34px; border-radius:14px;
+    font-size:1.05rem; box-shadow:0 8px 22px rgba(232,162,61,.32); border:0;
+  }
+  .btn:active{transform:translateY(1px)}
+  .btn.ghost{background:transparent; color:var(--amber); border:1.5px solid var(--gold); box-shadow:none; font-size:.95rem; padding:12px 24px}
+
+  /* STORY */
+  .story p{color:var(--muted); margin-bottom:16px; font-size:1.02rem}
+  .story strong{color:var(--cream)}
+  .feat{display:flex; gap:12px; flex-wrap:wrap; justify-content:center; margin-top:24px}
+  .feat span{background:var(--bg2); border:1px solid var(--line); border-radius:10px; padding:10px 16px; font-size:.86rem; font-weight:600}
+
+  /* CARDS */
+  .cards{display:grid; gap:16px}
+  .card{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:24px 22px; position:relative; overflow:hidden}
+  .card::before{content:attr(data-n); position:absolute; top:-12px; right:6px; font-size:4.4rem; font-weight:800; color:rgba(232,162,61,.10)}
+  .card h3{font-size:1.16rem; margin-bottom:8px; color:var(--amber)}
+  .card p{color:var(--muted); font-size:.96rem}
+
+  /* WELCOME tags */
+  .tags{display:flex; flex-wrap:wrap; gap:9px; justify-content:center}
+  .tag{background:var(--bg2); border:1px solid var(--line); border-radius:999px; padding:8px 15px; font-size:.85rem; font-weight:600}
+  .tag b{color:var(--amber)}
+
+  /* PAY */
+  .pay{background:var(--bg2); border:1px solid var(--line); border-radius:16px; overflow:hidden}
+  .pay .row{display:flex; justify-content:space-between; align-items:center; gap:14px; padding:15px 20px; border-bottom:1px solid var(--line)}
+  .pay .row:last-child{border-bottom:0}
+  .pay .row .k{font-weight:600}
+  .pay .row .k small{display:block; color:var(--muted); font-size:.76rem; font-weight:500; margin-top:2px}
+  .pay .row .v{font-size:1.32rem; font-weight:800; color:var(--amber); white-space:nowrap}
+  .pay .row.lead{background:linear-gradient(180deg,rgba(232,162,61,.14),transparent)}
+  .pay .row.night .v{color:#ffb59c}
+  .note{color:var(--muted); font-size:.82rem; margin-top:12px; text-align:center}
+
+  /* WORKSTYLE */
+  .grid2{display:grid; gap:14px; grid-template-columns:1fr 1fr}
+  .box{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:18px}
+  .box .lbl{color:var(--gold); font-size:.78rem; font-weight:700; letter-spacing:.08em; margin-bottom:6px}
+  .box .big{font-size:1.18rem; font-weight:800}
+  .box .sub{color:var(--muted); font-size:.85rem; margin-top:4px}
+
+  /* FAQ */
+  details{background:var(--card); border:1px solid var(--line); border-radius:12px; margin-bottom:11px; overflow:hidden}
+  summary{padding:16px 20px; font-weight:700; cursor:pointer; list-style:none; position:relative; padding-right:46px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"＋"; position:absolute; right:20px; top:15px; color:var(--gold); font-size:1.2rem}
+  details[open] summary::after{content:"－"}
+  details .a{padding:0 20px 18px; color:var(--muted); font-size:.95rem}
+
+  /* REQ */
+  .req{width:100%; border-collapse:collapse; background:var(--bg2); border:1px solid var(--line); border-radius:12px; overflow:hidden}
+  .req th,.req td{text-align:left; padding:13px 16px; border-bottom:1px solid var(--line); font-size:.92rem; vertical-align:top}
+  .req th{color:var(--gold); font-weight:700; width:34%; white-space:nowrap}
+  .req tr:last-child th,.req tr:last-child td{border-bottom:0}
+
+  /* APPLY */
+  .apply{background:linear-gradient(180deg,var(--bg2),#1c130d); border:1px solid var(--line); border-radius:20px; padding:34px 24px; text-align:center}
+  .apply h2{font-size:1.5rem; margin-bottom:10px; font-weight:800}
+  .apply p{color:var(--muted); margin-bottom:24px}
+  .applybtns{display:flex; flex-direction:column; gap:12px; max-width:340px; margin:0 auto}
+  .applybtns .btn{width:100%}
+  .contact{margin-top:22px; color:var(--muted); font-size:.9rem; line-height:2}
+  .contact b{color:var(--cream)}
+
+  footer{text-align:center; color:var(--muted); font-size:.8rem; padding:34px 20px 50px; border-top:1px solid var(--line); margin-top:20px}
+  footer .fb{font-size:1.4rem; margin-bottom:8px}
+
+  /* sticky mobile CTA */
+  .sticky{position:fixed; bottom:0; left:0; right:0; background:rgba(24,18,16,.92);
+    backdrop-filter:blur(8px); border-top:1px solid var(--line); padding:12px 16px; z-index:50;
+    display:flex; gap:10px; max-width:var(--maxw); margin:0 auto}
+  .sticky a{flex:1; text-align:center; text-decoration:none; padding:13px; border-radius:12px; font-weight:800}
+  .sticky .s-mail{background:linear-gradient(180deg,var(--amber),var(--gold)); color:#241606}
+  .sticky .s-tel{background:var(--card); color:var(--amber); border:1px solid var(--gold)}
+
+  @media(min-width:640px){
+    .cards{grid-template-columns:1fr; }
+    .hero h1{font-size:2.4rem}
+  }
+  @media(max-width:380px){
+    .grid2{grid-template-columns:1fr}
+    .hero h1{font-size:1.8rem}
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <span class="bear">🐻</span>
+  <div class="brand">BEER BEAR</div>
+  <h1>元イタリア料理人に学ぶ、<br><em>炭火</em>と<em>クラフトビール</em>の夜。</h1>
+  <p class="lead">おもろまちのビアレストランで、キッチンスタッフを募集しています。ここでのバイトは、ちゃんと“料理”が身につく。</p>
+  <div class="pills">
+    <span class="pill hot">未経験OK</span>
+    <span class="pill">時給 1,250円〜</span>
+    <span class="pill">深夜 1,562円〜</span>
+    <span class="pill">週2日〜・1日3h〜</span>
+  </div>
+  <a class="btn" href="#apply">応募する・話を聞いてみる</a>
+</header>
+
+<!-- STORY -->
+<section class="section story">
+  <div class="wrap">
+    <div class="eyebrow">ABOUT</div>
+    <h2 class="title">BEER BEAR ってこんなお店</h2>
+    <p>BEER BEAR（ビアベア）は、<strong>クラフトビール8タップ</strong>と<strong>炭火料理</strong>を楽しめる、おもろまちの夜のビアレストランです。クマの遊び心、クラフトビールのワクワク、炭火の香ばしさ。少しだけ特別な夜の空気が流れています。</p>
+    <p>キッチンをつくっているのは、<strong>元イタリア料理人のオーナー</strong>。いま BEER BEAR は、新しいコースとメニューを生み出している真っ最中です。だからここでのキッチンは、ただの居酒屋バイトではありません。<strong>盛り付け・炭火の火入れ・味のあわせ方まで、料理の基礎がしっかり身につきます。</strong></p>
+    <div class="feat">
+      <span>🍺 クラフト8タップ</span>
+      <span>🔥 炭火料理</span>
+      <span>📱 QRオーダー</span>
+      <span>🍝 元イタリアン</span>
+    </div>
+  </div>
+</section>
+
+<!-- 3 MERITS -->
+<section class="section" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="eyebrow">WHY BEER BEAR</div>
+    <h2 class="title">BEER BEARで働く、3つの魅力</h2>
+    <div class="cards">
+      <div class="card" data-n="01">
+        <h3>元イタリア料理人から直接学べる</h3>
+        <p>いつもの居酒屋料理を、一段上のクオリティへ。盛り付け、炭火の火入れ、味付け——プロの基礎が身につきます。「料理をやってみたい」人に、ちゃんと応える環境です。</p>
+      </div>
+      <div class="card" data-n="02">
+        <h3>クラフトビール8タップの本格店</h3>
+        <p>ビール好きにはたまらない環境。働きながら、自然とクラフトビールに詳しくなれます。お客様におすすめを語れるようになる、その面白さ。</p>
+      </div>
+      <div class="card" data-n="03">
+        <h3>リニューアル中の“今”が面白い</h3>
+        <p>新メニュー・新コースをみんなで作っている時期。あなたの「これやってみたい」が、お店に反映される。出来上がったお店に入るより、ずっとワクワクします。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WELCOME -->
+<section class="section">
+  <div class="wrap">
+    <div class="eyebrow">WELCOME</div>
+    <h2 class="title">こんな方、大歓迎です</h2>
+    <div class="tags">
+      <span class="tag"><b>未経験</b> 歓迎</span>
+      <span class="tag"><b>バイトデビュー</b> 歓迎</span>
+      <span class="tag">フリーター</span>
+      <span class="tag">主婦・主夫</span>
+      <span class="tag">学生</span>
+      <span class="tag">Wワーク OK</span>
+      <span class="tag">扶養内 OK</span>
+      <span class="tag">髪型・髪色 自由</span>
+    </div>
+    <p class="note">クラフトビールに詳しくなくても、炭火料理の経験がなくても大丈夫。最初から全部を任せることはありません。元気にあいさつができて、ひとつずつ覚えていければ十分です。先輩がサポートします。</p>
+  </div>
+</section>
+
+<!-- PAY -->
+<section class="section" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="eyebrow">SALARY</div>
+    <h2 class="title">給与 <small>できることが増えれば、ちゃんと上がる</small></h2>
+    <div class="pay">
+      <div class="row lead">
+        <div class="k">スタート（キッチン）<small>未経験はここから</small></div>
+        <div class="v">1,250円〜</div>
+      </div>
+      <div class="row">
+        <div class="k">研修期間<small>最大100時間・能力により短縮</small></div>
+        <div class="v">1,100円</div>
+      </div>
+      <div class="row">
+        <div class="k">キッチンを一通り<small>ひとりで回せるように</small></div>
+        <div class="v">1,350円</div>
+      </div>
+      <div class="row">
+        <div class="k">キッチン＋ホール両方<small>頼れる存在に</small></div>
+        <div class="v">1,400円</div>
+      </div>
+      <div class="row night">
+        <div class="k">22:00以降は深夜手当（+25%）<small>キッチン1,562円〜／両方できる方1,750円</small></div>
+        <div class="v">1,562円〜</div>
+      </div>
+    </div>
+    <p class="note">※昇給には規定があります。まかない・制服貸与・社員登用あり。</p>
+  </div>
+</section>
+
+<!-- WORKSTYLE -->
+<section class="section">
+  <div class="wrap">
+    <div class="eyebrow">WORK STYLE</div>
+    <h2 class="title">働き方</h2>
+    <div class="grid2">
+      <div class="box"><div class="lbl">勤務時間</div><div class="big">17:00〜25:00</div><div class="sub">の間でシフト制</div></div>
+      <div class="box"><div class="lbl">最短</div><div class="big">1日3時間〜</div><div class="sub">週2日〜OK</div></div>
+      <div class="box"><div class="lbl">シフト</div><div class="big">2週間ごと提出</div><div class="sub">学校・家庭・Wワークと両立</div></div>
+      <div class="box"><div class="lbl">通勤</div><div class="big">車・バイクOK</div><div class="sub">無料駐車場あり</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="eyebrow">FAQ</div>
+    <h2 class="title">よくある質問</h2>
+    <details><summary>本当に未経験でも大丈夫ですか？</summary><div class="a">大丈夫です。まずは盛り付け・簡単な仕込み・洗い場・ドリンク補助など、できることから始めます。炭火で焼く仕事は、慣れてきてから少しずつ。最初から全部は任せません。</div></details>
+    <details><summary>クラフトビールの知識は必要ですか？</summary><div class="a">不要です。働きながら覚えていけば十分。むしろビールが好きになる人が多いです。</div></details>
+    <details><summary>シフトはどのくらい自由ですか？</summary><div class="a">2週間ごとの提出制なので、学校・家庭・Wワーク・プライベートの予定に合わせて組めます。1日3時間・週2日からOKです。</div></details>
+    <details><summary>まかないはありますか？</summary><div class="a">あります。元イタリア料理人がつくる、BEER BEARの料理を食べられます。</div></details>
+  </div>
+</section>
+
+<!-- REQUIREMENTS -->
+<section class="section">
+  <div class="wrap">
+    <div class="eyebrow">REQUIREMENTS</div>
+    <h2 class="title">募集要項</h2>
+    <table class="req">
+      <tr><th>職種</th><td>キッチンスタッフ（アルバイト・パート）</td></tr>
+      <tr><th>仕事内容</th><td>調理・仕込み・盛り付け・洗い場など／慣れてきたら炭火調理にも挑戦<br><span style="color:var(--muted);font-size:.85rem">（変更の範囲：店舗内業務全般。繁忙時のホール・清掃補助などを含む）</span></td></tr>
+      <tr><th>就業場所</th><td>BEER BEAR（沖縄県那覇市おもろまち4-6-22 T-MAX 1F）<br><span style="color:var(--muted);font-size:.85rem">（変更の範囲：変更なし）</span></td></tr>
+      <tr><th>時給</th><td>1,250円〜1,400円（研修1,100円）／22時以降は深夜手当+25%</td></tr>
+      <tr><th>勤務時間</th><td>17:00〜25:00の間でシフト制／1日3時間〜・週2日〜</td></tr>
+      <tr><th>契約期間</th><td>期間の定めなし</td></tr>
+      <tr><th>待遇</th><td>昇給あり・制服貸与・まかないあり・社員登用あり・無料駐車場・深夜手当・髪型髪色自由</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- APPLY -->
+<section class="section" id="apply">
+  <div class="wrap">
+    <div class="apply">
+      <span style="font-size:2rem">🐻🍺</span>
+      <h2>まずは話を聞いてみませんか？</h2>
+      <p>15分ほどのオンライン面談（Zoom・スマホOK）から。<br>「ちょっと気になる」だけでも大歓迎です。</p>
+      <div class="applybtns">
+        <a class="btn" href="mailto:kiyo00221188@gmail.com?subject=BEER%20BEAR%20キッチンスタッフ応募&body=お名前：%0D%0Aお電話番号：%0D%0Aご年齢／ご身分：%0D%0A飲食経験（あり／なし）：%0D%0A週に何回くらい：%0D%0Aいつから働けるか：%0D%0A面談の希望日時（複数）：%0D%0A">メールで応募する</a>
+        <a class="btn ghost" href="tel:05088927500">電話する（050-8892-7500）</a>
+      </div>
+      <div class="contact">
+        <div>運営：<b>株式会社クッチーナキヨ</b></div>
+        <div>BEER BEAR ／ 那覇市おもろまち4-6-22 T-MAX 1F</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="fb">🐻</div>
+  BEER BEAR — Craft Beer &amp; Charcoal, Omoromachi.<br>
+  © 株式会社クッチーナキヨ
+</footer>
+
+<!-- sticky mobile CTA -->
+<nav class="sticky">
+  <a class="s-mail" href="mailto:kiyo00221188@gmail.com?subject=BEER%20BEAR%20キッチンスタッフ応募">メールで応募</a>
+  <a class="s-tel" href="tel:05088927500">電話する</a>
+</nav>
+
+</body>
+</html>

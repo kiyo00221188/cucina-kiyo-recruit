@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CucinaKiYO（銘苅）｜キッチンスタッフ募集</title>
+<meta name="description" content="那覇・銘苅の本格イタリアンCucinaKiYO。パスタ・リゾット・前菜の調理が学べるキッチンスタッフ募集。未経験OK・時給1,250円〜・昼夜えらべる。">
+<style>
+  :root{
+    --bg:#1a1311; --bg2:#241a16; --card:#2c211b; --line:#3d2e26;
+    --gold:#cf8a4a; --amber:#e3aa6a; --ember:#a8324a;
+    --cream:#f6efe4; --muted:#c4b4a3;
+    --maxw:760px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",system-ui,sans-serif;
+    background:var(--bg); color:var(--cream); line-height:1.8; -webkit-font-smoothing:antialiased; padding-bottom:84px}
+  a{color:inherit}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 20px}
+  .section{padding:54px 0}
+  .eyebrow{color:var(--gold); font-weight:700; letter-spacing:.14em; font-size:.78rem; text-align:center; margin-bottom:14px}
+  h2.title{font-size:1.55rem; text-align:center; line-height:1.5; margin-bottom:30px; font-weight:800}
+  h2.title small{display:block; font-size:.82rem; color:var(--muted); font-weight:500; margin-top:8px; letter-spacing:.04em}
+  .hero{position:relative; text-align:center; padding:72px 20px 64px;
+    background:radial-gradient(120% 80% at 50% -10%, rgba(168,50,74,.26), transparent 60%),linear-gradient(180deg,#22130f 0%,var(--bg) 100%);
+    border-bottom:1px solid var(--line)}
+  .hero .bear{font-size:2.6rem; display:block; margin-bottom:10px}
+  .hero .brand{letter-spacing:.30em; font-weight:800; color:var(--amber); font-size:.92rem; margin-bottom:22px}
+  .hero h1{font-size:2.05rem; line-height:1.44; font-weight:800; margin:0 auto 18px; max-width:18em; text-shadow:0 2px 18px rgba(0,0,0,.4)}
+  .hero h1 em{color:var(--amber); font-style:normal}
+  .hero .lead{color:var(--muted); font-size:1rem; max-width:24em; margin:0 auto 26px}
+  .hero .pills{display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin-bottom:30px}
+  .pill{background:rgba(255,255,255,.06); border:1px solid var(--line); color:var(--cream); padding:6px 13px; border-radius:999px; font-size:.8rem; font-weight:600}
+  .pill.hot{background:rgba(168,50,74,.2); border-color:rgba(168,50,74,.55); color:#f1a6b4}
+  .btn{display:inline-block; background:linear-gradient(180deg,var(--amber),var(--gold)); color:#241606; font-weight:800; text-decoration:none; padding:15px 34px; border-radius:14px; font-size:1.05rem; box-shadow:0 8px 22px rgba(207,138,74,.32); border:0}
+  .btn:active{transform:translateY(1px)}
+  .btn.ghost{background:transparent; color:var(--amber); border:1.5px solid var(--gold); box-shadow:none; font-size:.95rem; padding:12px 24px}
+  .story p{color:var(--muted); margin-bottom:16px; font-size:1.02rem}
+  .story strong{color:var(--cream)}
+  .feat{display:flex; gap:12px; flex-wrap:wrap; justify-content:center; margin-top:24px}
+  .feat span{background:var(--bg2); border:1px solid var(--line); border-radius:10px; padding:10px 16px; font-size:.86rem; font-weight:600}
+  .cards{display:grid; gap:16px}
+  .card{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:24px 22px; position:relative; overflow:hidden}
+  .card::before{content:attr(data-n); position:absolute; top:-12px; right:6px; font-size:4.4rem; font-weight:800; color:rgba(207,138,74,.10)}
+  .card h3{font-size:1.16rem; margin-bottom:8px; color:var(--amber)}
+  .card p{color:var(--muted); font-size:.96rem}
+  .tags{display:flex; flex-wrap:wrap; gap:9px; justify-content:center}
+  .tag{background:var(--bg2); border:1px solid var(--line); border-radius:999px; padding:8px 15px; font-size:.85rem; font-weight:600}
+  .tag b{color:var(--amber)}
+  .pay{background:var(--bg2); border:1px solid var(--line); border-radius:16px; overflow:hidden}
+  .pay .row{display:flex; justify-content:space-between; align-items:center; gap:14px; padding:15px 20px; border-bottom:1px solid var(--line)}
+  .pay .row:last-child{border-bottom:0}
+  .pay .row .k{font-weight:600}
+  .pay .row .k small{display:block; color:var(--muted); font-size:.76rem; font-weight:500; margin-top:2px}
+  .pay .row .v{font-size:1.32rem; font-weight:800; color:var(--amber); white-space:nowrap}
+  .pay .row.lead{background:linear-gradient(180deg,rgba(207,138,74,.14),transparent)}
+  .pay .row.night .v{color:#f1a6b4}
+  .note{color:var(--muted); font-size:.82rem; margin-top:12px; text-align:center}
+  .grid2{display:grid; gap:14px; grid-template-columns:1fr 1fr}
+  .box{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:18px}
+  .box .lbl{color:var(--gold); font-size:.78rem; font-weight:700; letter-spacing:.08em; margin-bottom:6px}
+  .box .big{font-size:1.12rem; font-weight:800}
+  .box .sub{color:var(--muted); font-size:.85rem; margin-top:4px}
+  details{background:var(--card); border:1px solid var(--line); border-radius:12px; margin-bottom:11px; overflow:hidden}
+  summary{padding:16px 20px; font-weight:700; cursor:pointer; list-style:none; position:relative; padding-right:46px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"＋"; position:absolute; right:20px; top:15px; color:var(--gold); font-size:1.2rem}
+  details[open] summary::after{content:"－"}
+  details .a{padding:0 20px 18px; color:var(--muted); font-size:.95rem}
+  .req{width:100%; border-collapse:collapse; background:var(--bg2); border:1px solid var(--line); border-radius:12px; overflow:hidden}
+  .req th,.req td{text-align:left; padding:13px 16px; border-bottom:1px solid var(--line); font-size:.92rem; vertical-align:top}
+  .req th{color:var(--gold); font-weight:700; width:34%; white-space:nowrap}
+  .req tr:last-child th,.req tr:last-child td{border-bottom:0}
+  .apply{background:linear-gradient(180deg,var(--bg2),#1c130d); border:1px solid var(--line); border-radius:20px; padding:34px 24px; text-align:center}
+  .apply h2{font-size:1.5rem; margin-bottom:10px; font-weight:800}
+  .apply p{color:var(--muted); margin-bottom:24px}
+  .applybtns{display:flex; flex-direction:column; gap:12px; max-width:340px; margin:0 auto}
+  .applybtns .btn{width:100%}
+  .contact{margin-top:22px; color:var(--muted); font-size:.9rem; line-height:2}
+  .contact b{color:var(--cream)}
+  footer{text-align:center; color:var(--muted); font-size:.8rem; padding:34px 20px 50px; border-top:1px solid var(--line); margin-top:20px}
+  footer .fb{font-size:1.4rem; margin-bottom:8px}
+  .back{display:inline-block; margin:18px auto 0; color:var(--muted); font-size:.82rem; text-decoration:none; border-bottom:1px dotted var(--muted)}
+  .sticky{position:fixed; bottom:0; left:0; right:0; background:rgba(26,19,17,.92); backdrop-filter:blur(8px); border-top:1px solid var(--line); padding:12px 16px; z-index:50; display:flex; gap:10px; max-width:var(--maxw); margin:0 auto}
+  .sticky a{flex:1; text-align:center; text-decoration:none; padding:13px; border-radius:12px; font-weight:800}
+  .sticky .s-mail{background:linear-gradient(180deg,var(--amber),var(--gold)); color:#241606}
+  .sticky .s-tel{background:var(--card); color:var(--amber); border:1px solid var(--gold)}
+  @media(max-width:380px){.grid2{grid-template-columns:1fr}.hero h1{font-size:1.8rem}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <span class="bear">🍝</span>
+  <div class="brand">CucinaKiYO ｜ 銘苅</div>
+  <h1>肩ひじ張らない、本格イタリアン。<br>その厨房で、<em>料理</em>を覚える。</h1>
+  <p class="lead">2019年開業、那覇・銘苅のイタリアン。パスタもリゾットも前菜も。未経験から、ちゃんと作れるようになります。</p>
+  <div class="pills">
+    <span class="pill hot">未経験OK</span>
+    <span class="pill">時給 1,250円〜</span>
+    <span class="pill">深夜 1,562円〜</span>
+    <span class="pill">昼・夜えらべる</span>
+  </div>
+  <a class="btn" href="#apply">応募する・話を聞いてみる</a>
+</header>
+
+<section class="section story">
+  <div class="wrap">
+    <div class="eyebrow">ABOUT</div>
+    <h2 class="title">CucinaKiYO ってこんなお店</h2>
+    <p>CucinaKiYO（クッチーナキヨ）は、2019年開業の<strong>「肩ひじ張らない本格イタリアン」</strong>。熟練のシェフがつくるパスタやリゾット、前菜の盛り合わせ、牛ハラミのタリアータやアヒージョ、デザートまで。夜はワインと一緒に、ゆっくり楽しめるお店です。</p>
+    <p>ここでのキッチンは、<strong>本格イタリアンの調理を一から覚えられる場所</strong>です。盛り付け・仕込みから始めて、慣れてきたらパスタやリゾット、前菜、肉料理にも挑戦できます。最初から全部は任せません。先輩がそばでサポートします。</p>
+    <div class="feat">
+      <span>🍝 生パスタ・リゾット</span>
+      <span>🥩 牛ハラミのタリアータ</span>
+      <span>🍷 ワイン</span>
+      <span>📱 QRオーダー</span>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="eyebrow">WHY CUCINAKIYO</div>
+    <h2 class="title">CucinaKiYOで働く、3つの魅力</h2>
+    <div class="cards">
+      <div class="card" data-n="01">
+        <h3>本格イタリアンの調理が身につく</h3>
+        <p>パスタ・リゾット・前菜・肉料理・デザートまで。2019年から続くお店の味を、熟練のシェフのもとで一つずつ覚えられます。「料理をやってみたい」に、本気で応える環境です。</p>
+      </div>
+      <div class="card" data-n="02">
+        <h3>昼も夜も、選んで働ける</h3>
+        <p>ランチ（11〜15時）だけ、ディナー（17時〜）だけ、昼夜両方。あなたの生活に合わせて選べます。昼も夜も入れる方は特に歓迎です。</p>
+      </div>
+      <div class="card" data-n="03">
+        <h3>オープンキッチンの臨場感</h3>
+        <p>カウンター越しに、お客様の「おいしい」が見える厨房。自分のつくった料理の反応がダイレクトに返ってくる、やりがいのある現場です。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="eyebrow">WELCOME</div>
+    <h2 class="title">こんな方、大歓迎です</h2>
+    <div class="tags">
+      <span class="tag"><b>未経験</b> 歓迎</span>
+      <span class="tag"><b>バイトデビュー</b> 歓迎</span>
+      <span class="tag">フリーター</span>
+      <span class="tag">主婦・主夫</span>
+      <span class="tag">学生</span>
+      <span class="tag">Wワーク OK</span>
+      <span class="tag">扶養内 OK</span>
+      <span class="tag">髪型・髪色 自由</span>
+    </div>
+    <p class="note">イタリアンの経験がなくても大丈夫。最初から全部を任せることはありません。キッチンもホールも前向きに取り組める方を歓迎します。元気にあいさつができて、ひとつずつ覚えていければ十分です。</p>
+  </div>
+</section>
+
+<section class="section" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="eyebrow">SALARY</div>
+    <h2 class="title">給与 <small>できることが増えれば、ちゃんと上がる</small></h2>
+    <div class="pay">
+      <div class="row lead"><div class="k">スタート（キッチン）<small>未経験はここから</small></div><div class="v">1,250円〜</div></div>
+      <div class="row"><div class="k">研修期間<small>最大100時間・能力により短縮</small></div><div class="v">1,100円</div></div>
+      <div class="row"><div class="k">キッチンを一通り<small>ひとりで回せるように</small></div><div class="v">1,350円</div></div>
+      <div class="row"><div class="k">キッチン＋ホール両方<small>頼れる存在に</small></div><div class="v">1,400円</div></div>
+      <div class="row night"><div class="k">22:00以降は深夜手当（+25%）<small>キッチン1,562円〜／両方できる方1,750円</small></div><div class="v">1,562円〜</div></div>
+    </div>
+    <p class="note">※昇給には規定があります。まかない・制服貸与・社員登用あり。</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="eyebrow">WORK STYLE</div>
+    <h2 class="title">働き方</h2>
+    <div class="grid2">
+      <div class="box"><div class="lbl">ランチ</div><div class="big">11:00〜15:00</div><div class="sub">昼だけ勤務もOK</div></div>
+      <div class="box"><div class="lbl">ディナー</div><div class="big">17:00〜23:00</div><div class="sub">金・土は〜24:00</div></div>
+      <div class="box"><div class="lbl">最短</div><div class="big">1日3時間〜</div><div class="sub">週2日〜OK</div></div>
+      <div class="box"><div class="lbl">通勤</div><div class="big">車・バイクOK</div><div class="sub">提携駐車場11台</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="eyebrow">FAQ</div>
+    <h2 class="title">よくある質問</h2>
+    <details><summary>本当に未経験でも大丈夫ですか？</summary><div class="a">大丈夫です。まずは盛り付け・仕込み・洗い場・ドリンク作りなど、できることから。パスタやリゾットの調理は慣れてきてから少しずつ。最初から全部は任せません。</div></details>
+    <details><summary>昼だけ／夜だけの勤務はできますか？</summary><div class="a">できます。ランチだけ、ディナーだけ、昼夜両方、どれでも相談OKです。昼も夜も入れる方は特に歓迎します。</div></details>
+    <details><summary>ホールもやらないとダメですか？</summary><div class="a">キッチンが中心ですが、混み合う時間は料理提供や片付けなどホールもお願いします。チームで協力して進めるお店です。</div></details>
+    <details><summary>まかないはありますか？</summary><div class="a">あります。お店のイタリアンを食べながら、味を覚えられます。</div></details>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="eyebrow">REQUIREMENTS</div>
+    <h2 class="title">募集要項</h2>
+    <table class="req">
+      <tr><th>職種</th><td>キッチンスタッフ（ホール業務あり）／アルバイト・パート</td></tr>
+      <tr><th>仕事内容</th><td>調理・仕込み・盛り付け・洗い場・ドリンク作りなど／繁忙時はホール（料理提供・片付け・レジ）<br><span style="color:var(--muted);font-size:.85rem">（変更の範囲：店舗内業務全般）</span></td></tr>
+      <tr><th>就業場所</th><td>CucinaKiYO（沖縄県那覇市銘苅1-2-17 クレセントビル2F）<br><span style="color:var(--muted);font-size:.85rem">ゆいレールおもろまち／古島駅 徒歩約10分・銘苅一丁目バス停 徒歩約2分</span></td></tr>
+      <tr><th>時給</th><td>1,250円〜1,400円（研修1,100円）／22時以降は深夜手当+25%</td></tr>
+      <tr><th>勤務時間</th><td>ランチ11:00〜15:00／ディナー17:00〜23:00（金土〜24:00）の間でシフト制／1日3時間〜・週2日〜</td></tr>
+      <tr><th>契約期間</th><td>期間の定めなし</td></tr>
+      <tr><th>待遇</th><td>昇給あり・制服貸与・まかないあり・社員登用あり・無料駐車場（提携11台）・深夜手当・髪型髪色自由</td></tr>
+    </table>
+  </div>
+</section>
+
+<section class="section" id="apply">
+  <div class="wrap">
+    <div class="apply">
+      <span style="font-size:2rem">🍝🍷</span>
+      <h2>まずは話を聞いてみませんか？</h2>
+      <p>15分ほどのオンライン面談（Zoom・スマホOK）から。<br>「ちょっと気になる」だけでも大歓迎です。</p>
+      <div class="applybtns">
+        <a class="btn" href="mailto:kiyo00221188@gmail.com?subject=CucinaKiYO%20キッチンスタッフ応募&body=お名前：%0D%0Aお電話番号：%0D%0Aご年齢／ご身分：%0D%0A飲食経験（あり／なし）：%0D%0A希望の勤務（昼／夜／両方）：%0D%0Aいつから働けるか：%0D%0A面談の希望日時（複数）：%0D%0A">メールで応募する</a>
+        <a class="btn ghost" href="tel:05088927500">電話する（050-8892-7500）</a>
+      </div>
+      <div class="contact">
+        <div>運営：<b>株式会社クッチーナキヨ</b></div>
+        <div>CucinaKiYO ／ 那覇市銘苅1-2-17 クレセントビル2F</div>
+      </div>
+      <a class="back" href="index.html">← 株式会社クッチーナキヨ 採用トップへ</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="fb">🍝</div>
+  CucinaKiYO — Trattoria, Mekaru Naha.<br>
+  © 株式会社クッチーナキヨ
+</footer>
+
+<nav class="sticky">
+  <a class="s-mail" href="mailto:kiyo00221188@gmail.com?subject=CucinaKiYO%20キッチンスタッフ応募">メールで応募</a>
+  <a class="s-tel" href="tel:05088927500">電話する</a>
+</nav>
+
+</body>
+</html>
