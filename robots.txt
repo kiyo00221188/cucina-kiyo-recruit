@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kiyo00221188.github.io/cucina-kiyo-recruit/sitemap.xml
