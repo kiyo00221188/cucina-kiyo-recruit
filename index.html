@@ -6,145 +6,116 @@
 <title>株式会社クッチーナキヨ｜採用・スタッフ募集</title>
 <meta name="description" content="沖縄・那覇／浦添で3つの飲食店を運営する株式会社クッチーナキヨの採用ページ。BEER BEAR・CucinaKiYO・PASTAの日でスタッフ募集中。未経験OK・時給1,200円〜。">
 <style>
-  :root{
-    --bg:#161310; --bg2:#211b15; --card:#2a221b; --line:#3a2e24;
-    --gold:#e0b15a; --amber:#eec77e; --cream:#f6efe4; --muted:#c2b3a2;
-    --maxw:820px;
-  }
+  :root{--bg:#f7f3ec;--bg2:#fffdf9;--card:#fff;--line:#e9e1d4;--ink:#241d17;--sub:#5f554b;--muted:#857a6e;--gold:#b06a14;--goldd:#915610;--amber:#cf8a2a;--maxw:820px}
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
-  body{font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",system-ui,sans-serif;
-    background:var(--bg); color:var(--cream); line-height:1.8; -webkit-font-smoothing:antialiased}
-  a{color:inherit; text-decoration:none}
-  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 20px}
-
-  .hero{text-align:center; padding:76px 20px 50px;
-    background:radial-gradient(120% 80% at 50% -10%, rgba(224,177,90,.18), transparent 60%),linear-gradient(180deg,#1d1812 0%,var(--bg) 100%);
-    border-bottom:1px solid var(--line)}
-  .hero .brand{letter-spacing:.18em; font-weight:800; color:var(--amber); font-size:.86rem; margin-bottom:20px}
-  .hero h1{font-size:2.15rem; line-height:1.5; font-weight:800; margin:0 auto 18px; max-width:16em}
-  .hero h1 em{color:var(--amber); font-style:normal}
-  .hero .lead{color:var(--muted); font-size:1.02rem; max-width:28em; margin:0 auto}
-  .hero .pills{display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin-top:26px}
-  .pill{background:rgba(255,255,255,.06); border:1px solid var(--line); padding:6px 14px; border-radius:999px; font-size:.82rem; font-weight:600}
-
-  .section{padding:50px 0}
-  .eyebrow{color:var(--gold); font-weight:700; letter-spacing:.14em; font-size:.78rem; text-align:center; margin-bottom:12px}
-  h2.title{font-size:1.5rem; text-align:center; line-height:1.5; margin-bottom:8px; font-weight:800}
-  .sub{color:var(--muted); text-align:center; font-size:.95rem; margin-bottom:30px}
-
-  .stores{display:grid; gap:18px}
-  .store{display:block; background:var(--card); border:1px solid var(--line); border-radius:18px; padding:26px 24px; transition:transform .15s, border-color .15s; position:relative; overflow:hidden}
+  body{font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.85;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+  .hero{text-align:center;padding:72px 20px 48px;background:radial-gradient(130% 90% at 50% 0%,#fff5e4 0%,var(--bg2) 55%,var(--bg) 100%);border-bottom:1px solid var(--line)}
+  .hero .brand{letter-spacing:.16em;font-weight:800;color:var(--goldd);font-size:.85rem;margin-bottom:18px}
+  .hero h1{font-size:2.1rem;line-height:1.5;font-weight:800;margin:0 auto 16px;max-width:16em;color:var(--ink)}
+  .hero h1 em{color:var(--gold);font-style:normal}
+  .hero .lead{color:var(--sub);font-size:1.02rem;max-width:28em;margin:0 auto}
+  .pills{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:24px}
+  .pill{background:#fff;border:1px solid var(--line);padding:6px 14px;border-radius:999px;font-size:.82rem;font-weight:700;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+  .section{padding:48px 0}
+  .eyebrow{color:var(--gold);font-weight:800;letter-spacing:.14em;font-size:.78rem;text-align:center;margin-bottom:12px}
+  h2.title{font-size:1.5rem;text-align:center;line-height:1.5;margin-bottom:8px;font-weight:800;color:var(--ink)}
+  .sub{color:var(--muted);text-align:center;font-size:.95rem;margin-bottom:28px}
+  .stores{display:grid;gap:18px}
+  .store{display:block;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 3px 14px rgba(40,30,15,.06);transition:transform .15s}
   .store:active{transform:scale(.99)}
-  .store .emo{font-size:2.2rem; display:block; margin-bottom:10px}
-  .store h3{font-size:1.3rem; margin-bottom:4px}
-  .store .area{font-size:.82rem; color:var(--muted); margin-bottom:12px}
-  .store p{color:var(--muted); font-size:.95rem; margin-bottom:16px}
-  .store .tags{display:flex; flex-wrap:wrap; gap:7px; margin-bottom:18px}
-  .store .tags span{background:var(--bg2); border:1px solid var(--line); border-radius:999px; padding:5px 12px; font-size:.78rem; font-weight:600}
-  .store .go{display:inline-flex; align-items:center; gap:6px; font-weight:800; font-size:.95rem}
-  .store.bb{border-top:3px solid #e8a23d}
-  .store.bb h3,.store.bb .go{color:#e8a23d}
-  .store.ck{border-top:3px solid #cf8a4a}
-  .store.ck h3,.store.ck .go{color:#e3aa6a}
-  .store.pa{border-top:3px solid #d9533a}
-  .store.pa h3,.store.pa .go{color:#e6a857}
-
-  .why{background:var(--bg2); border-top:1px solid var(--line); border-bottom:1px solid var(--line)}
-  .why .grid{display:grid; gap:16px; grid-template-columns:1fr 1fr 1fr}
-  .why .item{text-align:center; padding:8px}
-  .why .item .n{font-size:1.6rem; margin-bottom:6px}
-  .why .item h4{font-size:1rem; margin-bottom:5px; color:var(--amber)}
-  .why .item p{color:var(--muted); font-size:.86rem}
-
-  .apply{text-align:center; padding:54px 24px}
-  .apply h2{font-size:1.5rem; margin-bottom:10px; font-weight:800}
-  .apply p{color:var(--muted); margin-bottom:24px}
-  .btn{display:inline-block; background:linear-gradient(180deg,var(--amber),var(--gold)); color:#241606; font-weight:800; padding:15px 36px; border-radius:14px; font-size:1.05rem; box-shadow:0 8px 22px rgba(224,177,90,.3)}
-
-  footer{text-align:center; color:var(--muted); font-size:.8rem; padding:34px 20px 50px; border-top:1px solid var(--line)}
+  .store .emo{font-size:2.1rem;display:block;margin-bottom:10px}
+  .store h3{font-size:1.3rem;margin-bottom:4px}
+  .store .area{font-size:.82rem;color:var(--muted);margin-bottom:12px}
+  .store p{color:var(--sub);font-size:.95rem;margin-bottom:16px}
+  .store .tags{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:18px}
+  .store .tags span{background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:.78rem;font-weight:700}
+  .store .go{display:inline-flex;align-items:center;gap:6px;font-weight:800;font-size:.95rem}
+  .store.bb{border-top:4px solid #cf8a2a}.store.bb h3,.store.bb .go{color:#a8650f}
+  .store.ck{border-top:4px solid #b0463a}.store.ck h3,.store.ck .go{color:#933a30}
+  .store.pa{border-top:4px solid #c0432c}.store.pa h3,.store.pa .go{color:#a3392a}
+  .why{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .why .grid{display:grid;gap:16px;grid-template-columns:1fr 1fr 1fr}
+  .why .item{text-align:center;padding:8px}
+  .why .item .n{font-size:1.6rem;margin-bottom:6px}
+  .why .item h4{font-size:1rem;margin-bottom:5px;color:var(--goldd)}
+  .why .item p{color:var(--sub);font-size:.86rem}
+  .company{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px 22px;box-shadow:0 2px 10px rgba(40,30,15,.05);margin-top:8px}
+  .company p{color:var(--sub);font-size:.95rem;margin-bottom:14px}
+  .company .row{display:flex;gap:12px;padding:9px 0;border-top:1px solid var(--line);font-size:.92rem}
+  .company .row .l{color:var(--gold);font-weight:800;min-width:5.5em}
+  .company .row .r{color:var(--ink)}
+  .apply{text-align:center;padding:50px 24px}
+  .apply h2{font-size:1.45rem;margin-bottom:10px;font-weight:800;color:var(--ink)}
+  .apply p{color:var(--sub);margin-bottom:22px}
+  .btn{display:inline-block;background:linear-gradient(180deg,var(--amber),var(--gold));color:#fff;font-weight:800;padding:15px 36px;border-radius:13px;font-size:1.05rem;box-shadow:0 6px 16px rgba(176,106,20,.28)}
+  footer{text-align:center;color:var(--muted);font-size:.8rem;padding:32px 20px 46px;border-top:1px solid var(--line)}
   @media(max-width:560px){.why .grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-
 <header class="hero">
   <div class="brand">株式会社クッチーナキヨ ｜ 採用</div>
   <h1>沖縄で、<em>ちゃんとした料理</em>の店を。<br>一緒につくる仲間を募集します。</h1>
   <p class="lead">那覇・浦添で3つの飲食店を運営しています。元イタリア料理人がはじめた、料理が学べるお店たち。未経験から、ちゃんと育ちます。</p>
-  <div class="pills">
-    <span class="pill">未経験OK</span>
-    <span class="pill">時給1,200円〜</span>
-    <span class="pill">週2日〜・1日3h〜</span>
-    <span class="pill">まかない・社員登用あり</span>
-  </div>
+  <div class="pills"><span class="pill">未経験OK</span><span class="pill">時給1,200円〜</span><span class="pill">週2日〜・1日3h〜</span><span class="pill">まかない・社員登用あり</span></div>
 </header>
-
-<section class="section">
-  <div class="wrap">
-    <div class="eyebrow">OUR SHOPS</div>
-    <h2 class="title">働くお店を選ぶ</h2>
-    <p class="sub">3つの店、それぞれの個性。気になるお店をのぞいてみてください。</p>
-    <div class="stores">
-
-      <a class="store bb" href="bb-beer-bear.html">
-        <span class="emo">🐻</span>
-        <h3>BEER BEAR</h3>
-        <div class="area">那覇・おもろまち ｜ 夜のビアレストラン</div>
-        <p>クラフトビール8タップと炭火料理。元イタリア料理人に学ぶ、夜の本格キッチン。</p>
-        <div class="tags"><span>キッチン</span><span>夜17〜25時</span><span>深夜手当あり</span><span>時給1,250円〜</span></div>
-        <span class="go">採用ページを見る →</span>
-      </a>
-
-      <a class="store ck" href="cucinakiyo.html">
-        <span class="emo">🍝</span>
-        <h3>CucinaKiYO</h3>
-        <div class="area">那覇・銘苅 ｜ 本格イタリアン</div>
-        <p>2019年開業のイタリアン。パスタ・リゾット・前菜の調理が学べる。昼も夜も選べる。</p>
-        <div class="tags"><span>キッチン（ホールあり）</span><span>昼・夜</span><span>深夜手当あり</span><span>時給1,250円〜</span></div>
-        <span class="go">採用ページを見る →</span>
-      </a>
-
-      <a class="store pa" href="pasta.html">
-        <span class="emo">🍅</span>
-        <h3>PASTAの日</h3>
-        <div class="area">浦添・バークレーズコート ｜ パスタ＆ピザ</div>
-        <p>モール内のパスタ・ピザ店。10〜15時のランチ。主婦・学生・Wワークに人気の働き方。</p>
-        <div class="tags"><span>ランチホール／キッチン</span><span>10〜15時</span><span>扶養内OK</span><span>時給1,200円〜</span></div>
-        <span class="go">採用ページを見る →</span>
-      </a>
-
-    </div>
+<section class="section"><div class="wrap">
+  <div class="eyebrow">OUR SHOPS</div><h2 class="title">働くお店を選ぶ</h2>
+  <p class="sub">3つの店、それぞれの個性。気になるお店をのぞいてみてください。</p>
+  <div class="stores">
+    <a class="store bb" href="bb-beer-bear.html">
+      <span class="emo">🐻</span><h3>BEER BEAR</h3>
+      <div class="area">那覇・おもろまち ｜ 夜のビアレストラン</div>
+      <p>クラフトビール8タップと炭火料理。元イタリア料理人に学ぶ、夜の本格キッチン。</p>
+      <div class="tags"><span>キッチン</span><span>夜17〜25時</span><span>深夜手当あり</span><span>時給1,250円〜</span></div>
+      <span class="go">採用ページを見る →</span>
+    </a>
+    <a class="store ck" href="cucinakiyo.html">
+      <span class="emo">🍝</span><h3>CucinaKiYO</h3>
+      <div class="area">那覇・銘苅 ｜ 本格イタリアン</div>
+      <p>2019年開業のイタリアン。パスタ・リゾット・前菜の調理が学べる。昼も夜も選べる。</p>
+      <div class="tags"><span>キッチン（ホールあり）</span><span>昼・夜</span><span>深夜手当あり</span><span>時給1,250円〜</span></div>
+      <span class="go">採用ページを見る →</span>
+    </a>
+    <a class="store pa" href="pasta.html">
+      <span class="emo">🍅</span><h3>PASTAの日</h3>
+      <div class="area">浦添・バークレーズコート ｜ パスタ＆ピザ</div>
+      <p>モール内のパスタ・ピザ店。10〜15時のランチ。主婦・学生・Wワークに人気の働き方。</p>
+      <div class="tags"><span>ランチホール／キッチン</span><span>10〜15時</span><span>扶養内OK</span><span>時給1,200円〜</span></div>
+      <span class="go">採用ページを見る →</span>
+    </a>
   </div>
-</section>
-
-<section class="section why">
-  <div class="wrap">
-    <div class="eyebrow">WHY US</div>
-    <h2 class="title">クッチーナキヨで働くと</h2>
-    <p class="sub">どの店でも、共通して大事にしていること。</p>
-    <div class="grid">
-      <div class="item"><div class="n">🍴</div><h4>料理がちゃんと身につく</h4><p>元イタリア料理人の系譜。盛り付け・味付け・調理を一から学べます。</p></div>
-      <div class="item"><div class="n">🗓️</div><h4>予定に合わせて働ける</h4><p>1日3時間〜・週2日〜。シフトは2週間ごと提出。学校も家庭も両立。</p></div>
-      <div class="item"><div class="n">📈</div><h4>できれば、ちゃんと上がる</h4><p>できることが増えれば時給アップ。社員登用の道もあります。</p></div>
-    </div>
+</div></section>
+<section class="section why"><div class="wrap">
+  <div class="eyebrow">WHY US</div><h2 class="title">クッチーナキヨで働くと</h2>
+  <p class="sub">どの店でも、共通して大事にしていること。</p>
+  <div class="grid">
+    <div class="item"><div class="n">🍴</div><h4>料理がちゃんと身につく</h4><p>元イタリア料理人の系譜。盛り付け・味付け・調理を一から学べます。</p></div>
+    <div class="item"><div class="n">🗓️</div><h4>予定に合わせて働ける</h4><p>1日3時間〜・週2日〜。シフトは2週間ごと提出。学校も家庭も両立。</p></div>
+    <div class="item"><div class="n">📈</div><h4>できれば、ちゃんと上がる</h4><p>できることが増えれば時給アップ。社員登用の道もあります。</p></div>
   </div>
-</section>
-
-<section class="apply">
-  <div class="wrap">
-    <h2>気になったら、まず話を聞きに</h2>
-    <p>15分ほどのオンライン面談（Zoom・スマホOK）から。<br>各お店のページから、または下記までお気軽に。</p>
-    <a class="btn" href="mailto:kiyo00221188@gmail.com?subject=アルバイト応募（株式会社クッチーナキヨ）">メール・電話で応募する</a>
-    <p style="margin-top:18px; font-size:.88rem">メール：kiyo00221188@gmail.com ／ 電話：050-8892-7500</p>
+</div></section>
+<section class="section"><div class="wrap">
+  <div class="eyebrow">COMPANY</div><h2 class="title">運営会社について</h2>
+  <div class="company">
+    <p>株式会社クッチーナキヨは、沖縄・那覇／浦添で飲食店を運営しています。2019年、銘苅の小さなイタリアン「CucinaKiYO」から始まり、いまは3つのお店を展開。<strong>「肩ひじ張らない、本格的な料理を沖縄で」</strong>——元イタリア料理人の料理を、もっと多くの人に届けることを大切にしています。</p>
+    <div class="row"><div class="l">会社名</div><div class="r">株式会社クッチーナキヨ</div></div>
+    <div class="row"><div class="l">代表</div><div class="r">宮城 清兵</div></div>
+    <div class="row"><div class="l">事業</div><div class="r">飲食店の経営（沖縄県）</div></div>
   </div>
-</section>
-
+</div></section>
+<section class="apply"><div class="wrap">
+  <h2>気になったら、まず話を聞きに</h2>
+  <p>15分ほどのオンライン面談（Zoom・スマホOK）から。<br>各お店のページから、または下記までお気軽に。</p>
+  <a class="btn" href="mailto:kiyo00221188@gmail.com?subject=アルバイト応募（株式会社クッチーナキヨ）">メールで応募する</a>
+</div></section>
 <footer>
   株式会社クッチーナキヨ<br>
   BEER BEAR（那覇・おもろまち）／ CucinaKiYO（那覇・銘苅）／ PASTAの日（浦添・バークレーズコート）<br>
   © 株式会社クッチーナキヨ
 </footer>
-
 </body>
 </html>
